@@ -40,7 +40,7 @@ app.set('view engine', 'pug');
 app.use('/', require('./routes/index'));
 app.use('/users', require('./routes/users'));
 
-// Import the students route (move this below the middleware)
+// Import the students route
 app.use('/students', require('./routes/students'));
 
 // Catch 404 errors and forward them to the error handler
